@@ -1,0 +1,123 @@
+p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.58),rgba(0,0,0,0.58)),url("images/str_bg3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.global-navigation{
+    background: rgba(255,255,255,.3);
+    padding: 30px 15px;
+    left: 0;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 110px;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    transition: width 0.5s;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.user div{
+    display: none;
+}
+.user h2{
+    margin: auto;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.user-img{
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    cursor: pointer;
+}
+.logo-img{
+    width: 70px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+ul{
+    list-style: none;
+    padding: 0 15px;
+}
+ul li{
+    margin: 50px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+ul li img{
+    width: 40px;
+    margin-right: 0;
+}
+ul li p{
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    display: none;
+}
+.global-navigation:hover{
+    width:  250px;
+}
+.global-navigation:hover .user div{
+    display: block;
+}
+.global-navigation:hover .user{
+    width: 100%;
+    background: rgba(255,255,255,.2);
+    backdrop-filter: blur(5px);
+}
+.global-navigation:hover .user-img{
+    margin: 0;
+}
+.global-navigation:hover ul li p{
+    display: block;
+}
+.global-navigation:hover ul li img{
+    margin-right: 10px;
+}
+.global-navigation:hover ul li{
+    justify-content: flex-start;
+}
+.global-navigation:hover .logo-img{
+    width: 70px;
+    margin: auto;
+}
+
+
